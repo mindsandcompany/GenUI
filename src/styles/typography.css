@@ -1,0 +1,140 @@
+/**
+ * Figma 타이포그래피 디자인 토큰 CSS 변수
+ * Figma에서 추출한 모든 타이포그래피 스타일을 CSS 변수로 관리
+ */
+
+:root {
+  /* === Typography Variables === */
+
+  /* Font Family */
+  --font-family: 'Pretendard', system-ui, sans-serif;
+
+  /* Font Sizes */
+  --font-size-10: 10px;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-32: 32px;
+
+  /* Font Weights */
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+
+  /* Line Heights */
+  --line-height-16: 16px;
+  --line-height-18: 18px;
+  --line-height-24: 24px;
+  --line-height-28: 28px;
+  --line-height-32: 32px;
+  --line-height-36: 36px;
+  --line-height-40: 40px;
+
+  /* Letter Spacing */
+  --letter-spacing-0: 0;
+  --letter-spacing-n2: -0.2px;
+  --letter-spacing-heading1: -0.5px;
+  --letter-spacing-heading2: -0.4px;
+  --letter-spacing-heading3: -0.3px;
+  --letter-spacing-heading4: -0.2px;
+}
+
+/* === Typography Utility Classes === */
+
+@layer components {
+  /* Display Typography */
+  .display {
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-32) !important;
+    font-weight: var(--font-weight-700) !important;
+    line-height: var(--line-height-40) !important;
+    letter-spacing: var(--letter-spacing-heading1) !important;
+  }
+
+  /* Heading Typography */
+  .h1 {
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-28) !important;
+    font-weight: var(--font-weight-700) !important;
+    line-height: var(--line-height-36) !important;
+    letter-spacing: var(--letter-spacing-heading2) !important;
+  }
+
+  .h2 {
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-24) !important;
+    font-weight: var(--font-weight-700) !important;
+    line-height: var(--line-height-32) !important;
+    letter-spacing: var(--letter-spacing-heading3) !important;
+  }
+
+  .h3 {
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-20) !important;
+    font-weight: var(--font-weight-500) !important;
+    line-height: var(--line-height-28) !important;
+    letter-spacing: var(--letter-spacing-heading4) !important;
+  }
+
+  /* Body Typography */
+  .body-base {
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-16) !important;
+    font-weight: var(--font-weight-400) !important;
+    line-height: var(--line-height-24) !important;
+    letter-spacing: var(--letter-spacing-0) !important;
+  }
+
+  .body-medium {
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-16) !important;
+    font-weight: var(--font-weight-500) !important;
+    line-height: var(--line-height-24) !important;
+    letter-spacing: var(--letter-spacing-0) !important;
+  }
+
+  .body-bold {
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-16) !important;
+    font-weight: var(--font-weight-700) !important;
+    line-height: var(--line-height-24) !important;
+    letter-spacing: var(--letter-spacing-0) !important;
+  }
+
+  /* Sub Typography */
+  .sub-base {
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-14) !important;
+    font-weight: var(--font-weight-400) !important;
+    line-height: var(--line-height-24) !important;
+    letter-spacing: var(--letter-spacing-0) !important;
+  }
+
+  .sub-medium {
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-14) !important;
+    font-weight: var(--font-weight-500) !important;
+    line-height: var(--line-height-24) !important;
+    letter-spacing: var(--letter-spacing-0) !important;
+  }
+
+  .sub-bold {
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-14) !important;
+    font-weight: var(--font-weight-700) !important;
+    line-height: var(--line-height-24) !important;
+    letter-spacing: var(--letter-spacing-0) !important;
+  }
+
+  /* Caption Typography */
+  .caption {
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-12) !important;
+    font-weight: var(--font-weight-400) !important;
+    line-height: var(--line-height-16) !important;
+    letter-spacing: var(--letter-spacing-0) !important;
+  }
+}

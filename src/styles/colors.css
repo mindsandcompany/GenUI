@@ -1,0 +1,118 @@
+/* === Figma Color Design Tokens === */
+
+:root {
+  /* === Brand Colors === */
+  --color-brand-50: #e3f1ff;
+  --color-brand-100: #bcdcff;
+  --color-brand-200: #91c7ff;
+  --color-brand-300: #64b1ff;
+  --color-brand-400: #45a0ff;
+  --color-brand-500: #2e90ff;
+  --color-brand-600: #3181f2;
+  --color-brand-700: #316fde;
+  --color-brand-800: #305dcb;
+  --color-brand-900: #2d3dab;
+
+  /* === Neutral Colors === */
+  --color-white: #ffffff;
+  --color-neutral-50: #f9f9f9;
+  --color-neutral-100: #f2f2f2;
+  --color-neutral-200: #e8e8e8;
+  --color-neutral-300: #d8d8d8;
+  --color-neutral-400: #b4b4b4;
+  --color-neutral-500: #949494;
+  --color-neutral-600: #6c6c6c;
+  --color-neutral-700: #595959;
+  --color-neutral-800: #3a3a3a;
+  --color-neutral-900: #1a1a1a;
+
+  /* === Blue Colors === */
+  --color-blue-100: #ccf1f6;
+  --color-blue-200: #99e3ed;
+  --color-blue-300: #66d6e3;
+  --color-blue-400: #33c8da;
+  --color-blue-500: #00bad1;
+  --color-blue-600: #00a7bc;
+  --color-blue-700: #009eb2;
+  --color-blue-800: #0095a7;
+  --color-blue-900: #008c9d;
+
+  /* === Green Colors === */
+  --color-green-100: #d4f4e2;
+  --color-green-200: #a9e9c5;
+  --color-green-300: #7edda9;
+  --color-green-400: #53d28c;
+  --color-green-500: #28c76f;
+  --color-green-600: #24b364;
+  --color-green-700: #22a95e;
+  --color-green-800: #209f59;
+  --color-green-900: #1e9553;
+
+  /* === Yellow/Orange Colors === */
+  --color-yellow-100: #fffaf0;
+  --color-yellow-200: #feebc8;
+  --color-yellow-300: #fbd38d;
+  --color-yellow-400: #f6ad55;
+  --color-yellow-500: #ed8936;
+  --color-yellow-600: #dd6b20;
+  --color-yellow-700: #c05621;
+  --color-yellow-800: #9c4221;
+  --color-yellow-900: #7b341e;
+
+  /* === Red Colors === */
+  --color-red-100: #ffdbdc;
+  --color-red-200: #ffb7b9;
+  --color-red-300: #ff9497;
+  --color-red-400: #ff7074;
+  --color-red-500: #ff4c51;
+  --color-red-600: #e64449;
+  --color-red-700: #d94145;
+  --color-red-800: #cc3d41;
+  --color-red-900: #bf383d;
+
+  /* === Text Colors === */
+  --color-text-default: #1a1a1a;
+
+  /* === Tint Colors (with transparency) === */
+  /* Primary tints */
+  --color-tint-primary-lighter: #2e90ff14; /* 8% opacity */
+  --color-tint-primary-light: #2e90ff29; /* 16% opacity */
+  --color-tint-primary-main: #2e90ff3d; /* 24% opacity */
+  --color-tint-primary-dark: #2e90ff52; /* 32% opacity */
+  --color-tint-primary-darker: #2e90ff61; /* 38% opacity */
+
+  /* Neutral tints */
+  --color-tint-neutral-lighter: #89898914; /* 8% opacity */
+  --color-tint-neutral-light: #89898929; /* 16% opacity */
+  --color-tint-neutral-main: #8989893d; /* 24% opacity */
+  --color-tint-neutral-dark: #89898952; /* 32% opacity */
+  --color-tint-neutral-darker: #89898961; /* 38% opacity */
+
+  /* Blue tints */
+  --color-tint-blue-lighter: #00bad114; /* 8% opacity */
+  --color-tint-blue-light: #00bad129; /* 16% opacity */
+  --color-tint-blue-main: #00bad13d; /* 24% opacity */
+  --color-tint-blue-dark: #00bad152; /* 32% opacity */
+  --color-tint-blue-darker: #00bad161; /* 38% opacity */
+
+  /* Green tints */
+  --color-tint-green-lighter: #28c76f14; /* 8% opacity */
+  --color-tint-green-light: #28c76f29; /* 16% opacity */
+  --color-tint-green-main: #28c76f3d; /* 24% opacity */
+  --color-tint-green-dark: #28c76f52; /* 32% opacity */
+  --color-tint-green-darker: #28c76f61; /* 38% opacity */
+
+  /* Orange tints */
+  --color-tint-orange-lighter: #ed893614; /* 8% opacity */
+  --color-tint-orange-light: #ed893629; /* 16% opacity */
+  --color-tint-orange-main: #ed89363d; /* 24% opacity */
+  --color-tint-orange-dark: #ed893652; /* 32% opacity */
+  --color-tint-orange-darker: #ed893661; /* 38% opacity */
+
+  /* Red tints */
+  --color-tint-red-lighter: #ff4c5114; /* 8% opacity */
+  --color-tint-red-light: #ff4c5129; /* 16% opacity */
+  --color-tint-red-main: #ff4c513d; /* 24% opacity */
+  --color-tint-red-dark: #ff4c5152; /* 32% opacity */
+  --color-tint-red-darker: #ff4c5161; /* 38% opacity */
+}
