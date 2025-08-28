@@ -39,19 +39,21 @@ jobs:
         run: pnpm run build
 
       - name: Pack tarball
-        run: npm pack --json > pack.json
-
-      - name: Read tarball name
         id: pack
-        run: echo "TARBALL=$(jq -r '.[0].filename' < pack.json)" >> $GITHUB_OUTPUT
+        run: |
+          TARBALL=$(npm pack --silent)
+          echo "Tarball: $TARBALL"
+          echo "TARBALL=$TARBALL" >> $GITHUB_OUTPUT
 
       - name: Upload artifact
+        if: ${{ steps.pack.outputs.TARBALL != '' }}
         uses: actions/upload-artifact@v4
         with:
           name: package-tarball
           path: ${{ steps.pack.outputs.TARBALL }}
 
       - name: Create GitHub Release
+        if: ${{ steps.pack.outputs.TARBALL != '' }}
         uses: softprops/action-gh-release@v2
         with:
           files: ${{ steps.pack.outputs.TARBALL }}
