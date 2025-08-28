@@ -31,3 +31,7 @@ Next.js 예시
 로컬 빌드
 
 - `npm run build` → `dist/` 생성(tsup, esm+cjs+dts)
+
+자세한 사용 가이드
+
+- GenOS app-front(Next.js) 예시와 트러블슈팅은 `docs/usage-app-front.md`를 참고하세요.
