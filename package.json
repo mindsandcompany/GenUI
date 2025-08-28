@@ -20,6 +20,10 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
+    "./styles/globals.css": "./src/styles/globals.css",
+    "./styles/typography.css": "./src/styles/typography.css",
+    "./styles/colors.css": "./src/styles/colors.css",
+    "./styles/token.css": "./src/styles/token.css",
     "./tailwind-preset": "./tailwind.preset.cjs",
     "./package.json": "./package.json"
   },

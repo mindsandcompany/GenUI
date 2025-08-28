@@ -25,7 +25,7 @@ Next.js 예시
 - `tailwind.config.js`
   - `presets: [require('@genon_ui/uikit/tailwind-preset')]`
   - `content`에 앱 경로 포함
-- 글로벌 CSS: `@import '@genon_ui/uikit/src/styles/globals.css'`
+- 글로벌 CSS: `@import '@genon_ui/uikit/styles/globals.css'`
 - 사용: `import { Button } from '@genon_ui/uikit'`
 
 로컬 빌드
