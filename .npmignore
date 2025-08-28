@@ -1,0 +1,21 @@
+# Exclude storybook and stories
+.storybook/
+src/stories/
+**/*.stories.*
+debug-storybook.log
+
+# Build and tooling files not needed in package
+scripts/
+tsup.config.ts
+tsconfig.json
+tailwind.config.js
+postcss.config.cjs
+
+# Repo files
+.git/
+.gitignore
+pnpm-lock.yaml
+node_modules/
+npm-debug.log*
+yarn-error.log*
+

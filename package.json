@@ -3,20 +3,44 @@
   "version": "0.0.1",
   "private": false,
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mindsandcompany/GenUI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mindsandcompany/GenUI/issues"
+  },
+  "homepage": "https://github.com/mindsandcompany/GenUI#readme",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./tailwind-preset": "./tailwind.preset.cjs",
+    "./package.json": "./package.json"
+  },
   "sideEffects": false,
   "files": [
     "dist",
-    "src",
+    "src/styles",
     "tailwind.preset.cjs"
   ],
   "scripts": {
     "story": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build": "tsup src/index.ts --dts --format esm,cjs --clean",
+    "build": "tsup --config tsup.config.ts",
+    "prepare": "npm run build",
     "stories:layout": "node scripts/move-stories.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "peerDependencies": {
     "react": ">=18",
