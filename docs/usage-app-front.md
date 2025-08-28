@@ -27,8 +27,8 @@ module.exports = {
 
 글로벌 CSS(app/globals.css 또는 src/app/globals.css)
 
-@import '@genon_ui/uikit/src/styles/globals.css';
-@import '@genon_ui/uikit/src/styles/typography.css';
+@import '@genon_ui/uikit/styles/globals.css';
+@import '@genon_ui/uikit/styles/typography.css';
 
 컴포넌트 사용(app/page.tsx 예시)
 
