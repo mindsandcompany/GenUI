@@ -41,9 +41,11 @@ jobs:
       - name: Pack tarball
         id: pack
         run: |
-          TARBALL=$(npm pack --silent)
+          # npm pack가 prepare 스크립트를 실행하며 빌드 로그를 섞어 출력할 수 있으므로
+          # --ignore-scripts와 tail -n1로 파일명만 안전하게 추출합니다.
+          TARBALL=$(npm pack --ignore-scripts --silent | tail -n1 | tr -d '\n')
           echo "Tarball: $TARBALL"
-          echo "TARBALL=$TARBALL" >> $GITHUB_OUTPUT
+          echo "TARBALL=$TARBALL" >> "$GITHUB_OUTPUT"
 
       - name: Upload artifact
         if: ${{ steps.pack.outputs.TARBALL != '' }}
