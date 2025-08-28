@@ -1,4 +1,4 @@
-GenOS app-front에서 @genon/uikit 사용 가이드
+GenOS app-front에서 @genon_ui/uikit 사용 가이드
 
 전제 조건
 
@@ -8,13 +8,13 @@ GenOS app-front에서 @genon/uikit 사용 가이드
 
 설치
 
-- npm: `npm i @genon/uikit`
-- yarn: `yarn add @genon/uikit`
+- npm: `npm i @genon_ui/uikit`
+- yarn: `yarn add @genon_ui/uikit`
 
 Tailwind 설정(tailwind.config.js)
 
 module.exports = {
-  presets: [require('@genon/uikit/tailwind-preset')],
+  presets: [require('@genon_ui/uikit/tailwind-preset')],
   content: [
     './app/**/*.{ts,tsx}',
     './pages/**/*.{ts,tsx}',
@@ -27,12 +27,12 @@ module.exports = {
 
 글로벌 CSS(app/globals.css 또는 src/app/globals.css)
 
-@import '@genon/uikit/src/styles/globals.css';
-@import '@genon/uikit/src/styles/typography.css';
+@import '@genon_ui/uikit/src/styles/globals.css';
+@import '@genon_ui/uikit/src/styles/typography.css';
 
 컴포넌트 사용(app/page.tsx 예시)
 
-import { Button, Input } from '@genon/uikit'
+import { Button, Input } from '@genon_ui/uikit'
 
 export default function Page() {
   return (
@@ -50,4 +50,3 @@ export default function Page() {
 - 설치 실패(Git 직접 설치): npm 사용 또는 Release tarball/퍼블리시 버전 사용
 - 타입 미인식: 에디터/TS 서버 재시작
 - React 버전 경고: React/ReactDOM 18 이상 확인
-

@@ -1,6 +1,6 @@
 {
-  "name": "@genon/uikit",
-  "version": "0.0.3",
+  "name": "@genon_ui/uikit",
+  "version": "0.0.1",
   "private": false,
   "type": "module",
   "repository": {
@@ -37,7 +37,8 @@
     "stories:layout": "node scripts/move-stories.mjs"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "engines": {
     "node": ">=18"
